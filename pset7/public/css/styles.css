@@ -1,0 +1,169 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ *
+ * Global CSS.
+ */
+
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+#middle .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+    
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+}
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+button {
+    border: 2px solid black;
+}
+#portfolio tr:nth-child(even) {
+    background-color: DarkSeaGreen  ;
+}
+#portfolio tr:nth-child(odd) {
+   background-color:LavenderBlush ;
+}
+#portfolio th	{
+    background-color: #A9A9A9;
+    color: white;
+}
+#hello
+{
+    font-family: Courier New;
+    font-size: 20px;
+    
+}
+#history
+{
+    font-family: Courier New;
+    font-size: 20px;
+    
+}
+
+#quote
+{
+    padding: 20px;
+    font-style: bold;
+    color: DarkOliveGreen ;
+}
+#buy
+{
+    padding: 20px;
+    color: DarkOliveGreen ;
+    font-style: bold;
+}
+#sell
+{
+    padding: 20px;
+    color: green;
+    color: DarkOliveGreen;
+}
+#hist
+{
+    padding: 20px;
+    color: DarkOliveGreen ;
+    font-style: bold;
+}
+#log
+{
+    padding: 20px;
+    color: DarkOliveGreen;
+    font-style: bold;
+}
+#choose
+{
+    padding: 20px;
+    color: black;
+    font-style: bold;
+    font-family: Courier New;
+    font-size: 20px;
+}
+#congrat
+{
+    padding: 20px;
+    color: DarkGreen;
+    font-style: bold;
+    font-family: Courier New;
+    font-size: 20px;
+}  
+#shares_sold 
+{
+    padding: 20px;
+    color: black;
+    font-style: bold;
+    font-family: Courier New;
+    font-size: 15px;
+    
+    
+} 
+.back
+{
+    padding: 20px;
+    color: DarkGreen;
+    font-style: bold;
+    font-family: Courier New;
+    font-size: 20px;
+} 
+#price
+{
+    padding: 20px;
+    color: black;
+    font-style: bold;
+    font-family: Courier New;
+    font-size: 20px;
+}
+#change
+{
+    padding: 20px;
+    color: black;
+    font-style: bold;
+    font-family: Courier New;
+    font-size: 20px;
+}
+#cpw
+{
+    padding: 20px;
+    color: black;
+    font-style: bold;
+    font-family: Courier New;
+    font-size: 15px;
+}
+#lpw
+{
+   
+    color: red ;
+    font-style: bold;
+    font-size: 18px;
+}
+

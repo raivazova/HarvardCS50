@@ -1,0 +1,71 @@
+0.  What is pneumonoultramicroscopicsilicovolcanoconiosis?
+
+    A lung disease caused by silica dust. And the longest word in the english language.
+
+1.  According to its man page, what does getrusage do?
+
+    Returns resource usage satistics for : RUSAGE_SELF, RUSAGE_CHILDREN, RUSAGE_THREAD.
+
+2.  Per that same man page, how many members are in a variable of type struct rusage?
+
+               struct timeval ru_utime; /* user CPU time used */
+               struct timeval ru_stime; /* system CPU time used */
+               long   ru_maxrss;        /* maximum resident set size */
+               long   ru_ixrss;         /* integral shared memory size */
+               long   ru_idrss;         /* integral unshared data size */
+               long   ru_isrss;         /* integral unshared stack size */
+               long   ru_minflt;        /* page reclaims (soft page faults) */
+               long   ru_majflt;        /* page faults (hard page faults) */
+               long   ru_nswap;         /* swaps */
+               long   ru_inblock;       /* block input operations */
+               long   ru_oublock;       /* block output operations */
+               long   ru_msgsnd;        /* IPC messages sent */
+               long   ru_msgrcv;        /* IPC messages received */
+               long   ru_nsignals;      /* signals received */
+               long   ru_nvcsw;         /* voluntary context switches */
+               long   ru_nivcsw;        /* involuntary context switches */
+
+
+3.  Why do you think we pass before and after by reference (instead of by value) to calculate, 
+    even though we’re not changing their contents?
+    
+    Because we are using the members of the variables of type struct rusage to calculate and we want to have access to the result in our main function. 
+    Otherwise we would only use them in our function.
+    
+4.  Explain as precisely as possible, in a paragraph or more, how main goes about reading words from a file. 
+    In other words, convince us that you indeed understand how that function’s for loop works.
+    
+    We read the txt file charactr by character until we reach the end of file.
+    Then we are checking if the character we red is a letter from the alphabet, if it is we copy it's value in the current index of a variable called word.
+    We increment the index and repeat the same until we reah a character that is not a leter or a digit and if the index os not 0 when that happens 
+    it means we now have the whole word.
+    
+5.  Why do you think we used fgetc to read each word’s characters one at a time 
+    rather than use fscanf with a format string like "%s" to read whole words at a time? 
+    Put another way, what problems might arise by relying on fscanf alone?
+    
+    Because then we could not exclude strings that contain digits or other characters like dashes and so.
+    
+6.  Why do you think we declared the parameters for check and load as const?
+
+    Because we are only going to use them as "read only" in ourfunctions we won't change their values.
+
+7.  What data structure(s) did you use to implement your spell-checker? 
+    Be sure not to leave your answer at just "hash table," "trie," or the like. 
+    Expound on what’s inside each of your "nodes."
+    
+    I used tries with a boolean value for each end of a word(leaf node) and an array of  pointers 
+    (27 - one for each letter af the alphabet and one for apostrophe.) to a next level node.
+    
+8.  How slow was your code the first time you got it working correctly?
+
+    I didn't make any changes on my code afterwords it was that fast when i furst got it to work.
+
+
+9.  What kinds of changes, if any, did you make to your code in order to improve its performance?
+
+    I didn't do any changes.
+
+
+10. Do you feel that your code has any bottlenecks that you were not able to chip away at?
+    No.
