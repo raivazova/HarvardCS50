@@ -1,8 +1,6 @@
 //
 // server.c
 //
-// David J. Malan
-// malan@harvard.edu
 //
 
 // feature test macro requirements
